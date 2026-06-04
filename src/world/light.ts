@@ -5,5 +5,8 @@ export function setLight(){
   const amb = new THREE.AmbientLight(0xffffff, 1.2)
   scene.add(amb)
 
-
+  {
+    // const l = new THREE.PointLight(0xffffff, 100, 100, 1.1)
+    // scene.add(l)
+  }
 }

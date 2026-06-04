@@ -4,6 +4,7 @@ import * as THREE from 'three'
 import {setEnv} from './world/envMap'
 import GlowCrystal from './world/glowCrystal'
 import { setLight } from './world/light'
+import ringTrail from './world/trail'
 
 
 
@@ -11,11 +12,12 @@ import { setLight } from './world/light'
   await initScene()
   camera.position.set(0,1,10)
 
-  const axesHelper = new THREE.AxesHelper(10)
-  scene.add(axesHelper)
+  // const axesHelper = new THREE.AxesHelper(10)
+  // scene.add(axesHelper)
 
   setLight()
   setEnv()
 
-  GlowCrystal()
+  // GlowCrystal()
+  await ringTrail()
 })()

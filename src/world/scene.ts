@@ -24,7 +24,7 @@ export async function initScene() {
   renderer.setSize(window.innerWidth, window.innerHeight)
   renderer.toneMapping = THREE.ACESFilmicToneMapping
   // renderer.toneMapping=THREE.NeutralToneMapping
-  renderer.toneMappingExposure = 1
+  renderer.toneMappingExposure = .6
   renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 

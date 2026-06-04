@@ -11,7 +11,7 @@ export function getRenderPipeline() {
   // @range: { min: 0, max: 1, step: 0.01 }
   const radius = uniform(.2)
   // @range: { min: 0, max: 1, step: 0.01 }
-  const threshold = uniform(.8) 
+  const threshold = uniform(1) 
 
   const renderPipeline = new THREE.RenderPipeline(renderer);
   const scenePass = pass(scene, camera);
